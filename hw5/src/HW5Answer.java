@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class HW5Answer {
     public static void main(String[] args) {
@@ -40,12 +39,11 @@ public class HW5Answer {
         }
 
         //整理輸出格式
-        animalMap.forEach((key, value) -> System.out.println(key + ": " + (value.stream()
-                .collect(Collectors.joining(", ")))));
+        animalMap.forEach((key, value) -> System.out.println(key + ": " + (String.join(", ", value))));
 
-        //ocean: shark,jelly fish,whale
-        //land: bear,moose
-        //swamp: frog,heron
+        //ocean: shark, jelly fish, whale
+        //land: bear, moose
+        //swamp: frog, heron
 
         //=====================================================================
         System.out.println("========================================");
