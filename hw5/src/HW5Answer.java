@@ -32,7 +32,7 @@ public class HW5Answer {
                 animalMap.put(habitat, new ArrayList<String>());
             }
 
-           //根據 animalMap 的 key(habitat) 加入 value 中 的 List<String>)
+           //根據 animalMap 的 key(habitat) 加入 value 中 的 List<String>
             animalMap.get(habitat).add(animal.get("name"));
         }
 
