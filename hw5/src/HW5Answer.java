@@ -32,10 +32,8 @@ public class HW5Answer {
                 animalMap.put(habitat, new ArrayList<String>());
             }
 
-            //當 habitat 相同， 將其 name 的 value 加入 animalMap 的 value(List<String>)
-            if (animal.get("habitat").equals(habitat)) {
-                animalMap.get(habitat).add(animal.get("name"));
-            }
+           //根據 animalMap 的 key(habitat) 加入 value 中 的 List<String>)
+            animalMap.get(habitat).add(animal.get("name"));
         }
 
         //整理輸出格式
