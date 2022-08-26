@@ -41,7 +41,7 @@ public class HW5Answer {
 
         //整理輸出格式
         animalMap.forEach((key, value) -> System.out.println(key + ": " + (value.stream()
-                .collect(Collectors.joining(",")))));
+                .collect(Collectors.joining(", ")))));
 
         //ocean: shark,jelly fish,whale
         //land: bear,moose
